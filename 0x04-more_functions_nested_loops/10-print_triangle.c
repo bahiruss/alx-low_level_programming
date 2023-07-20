@@ -1,32 +1,35 @@
 #include "main.h"
+
 /**
- * by descending the "#" drawing half triangle shape
  * print_triangle - prints a triangle, followed by a new line
  * @size: size of the triangle
+ * return: empty
  */
+
 void print_triangle(int size)
+
 {
-	if (size <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
-		int i, j;
 
-		for (i = 1; i <= size; i++)
-		{
-			for (j = i; j < size; j++)
-			{
-				_putchar(' ');
-			}
+int x, y, z;
 
-			for (j = 1; j <= i; j++)
-			{
-				_putchar('#');
-			}
+if (size <= 0)
+{
+_putchar('\n');
+}
+else
+{
+for (x = 1; x < size; x++)
+{
+for (y = size - x; y > 1; y--)
+{
+_putchar(32);
+}
 
-			_putchar('\n');
-		}
-	}
+for (z = 0; z <= x; z++)
+{
+_putchar(35);
+}
+_putchar('\n');
+}
+}
 }
