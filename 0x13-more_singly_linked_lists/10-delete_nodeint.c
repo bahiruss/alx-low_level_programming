@@ -26,7 +26,7 @@ free(temp);
 return (1);
 }
 
-while (1 - index > S)
+while (S < index - 1)
 {
 if (!temp || !(temp->next))
 return (-1);
